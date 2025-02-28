@@ -11,36 +11,76 @@
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
-    <div class="max-w-7xl bg-lime-50 mx-auto">
+<body class="">
+    <div class="max-w-7xl mx-auto">
         <!-- navbar part start here -->
         <header class="mt-6">
             <nav>
                 <div class="navbar bg-base-100 shadow-sm rounded-2xl">
                     <div class="flex-none">
                         <button class="btn btn-square btn-ghost">
-                         <img src="assets/logo.png" alt="logo">
+                            <img src="assets/logo.png" alt="logo">
                         </button>
                     </div>
                     <div class="flex-1">
-                        <a class="btn text-[#00303C] btn-ghost text-4xl font-[Poppins] font-bold"><span>Dev</span>Board</a>
+                        <a
+                            class="btn text-[#00303C] btn-ghost text-4xl font-[Poppins] font-bold"><span>Dev</span>Board</a>
                     </div>
                     <div class="flex-none">
                         <button class="btn rounded-2xl bg-[#F4F7FF] btn-ghost mr-9">
-                           <img src="assets/checkbox.png" alt="check-box">
-                           <h4 class="font-[Poppins] font-bold text-3xl text-[#1E1E1E]">23</h4>
+                            <img src="assets/checkbox.png" alt="check-box">
+                            <h4 class="font-[Poppins] font-bold text-3xl text-[#1E1E1E]">23</h4>
                         </button>
                         <button class="btn btn-square btn-ghost">
-                          <img src="assets/theme-btn.png" alt="">
+                            <img src="assets/theme-btn.png" alt="">
                         </button>
                     </div>
                 </div>
             </nav>
         </header>
         <!-- navbar part end here -->
+        <!-- dev board dash board -->
+
+        <section id="dashBoard">
+            <div class="grid grid-cols-3 gap-6">
+                <div class="dash-board p-8 bg-[#F4F7FF] rounded-xl flex gap-2 ">
+                    <div class="w-12 h-12 p-4 rounded-full bg-white flex justify-center items-center">
+                        <img class="w-5 h-5" src="assets/checkbox.png" alt="check-box">
+                    </div>
+                   <div>
+                    <p>Task Assigned </p>
+                    <h4>05</h4>
+                   </div>
+                </div>
+
+                <div class="pl-10 pt-5 bg-gradient-to-r from-[#3752FD] via-[rgba(108,127,250,0.53)] to-[#9BA8F8] rounded-xl gap-2 flex justify-center items-center">
+                    <div>
+                    <img class="w-5 h-5" src="assets/calender.png" alt="check-box">
+                  </div>
+                   <div>
+                    <p>Discover Something <br> New Today!</p>
+                   </div>
+                </div>
+                <div class="dash-board p-8 bg-[#F4F7FF] rounded-xl flex gap-2 ">
+                    <div class="w-12 h-12 p-4 rounded-full bg-white flex justify-center items-center">
+                        <img class="w-5 h-5" src="assets/checkbox.png" alt="check-box">
+                    </div>
+                   <div>
+                    <p>Task Assigned </p>
+                    <h4>05</h4>
+                   </div>
+                </div>
+
+
+
+            </div>
+
+        </section>
 
 
 
