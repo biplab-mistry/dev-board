@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,50 +8,58 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body>
     <div class="container text-center px-2 mx-auto  mt-12">
-       <div class="bg-slate-600 rounded-lg p-3 mb-3 ">
-        <h2 class="text-white font-bold text-2xl mb-4">Question-1: What are the different ways to select an element in the DOM?</h2>
-        <p  class="text-white">we select the element basically 3 ways:
-            1.get element by Id method: where we set id at html and then we find out getElementById("idName"),
-            2.get elements by class name method: were we find out getElementsByClassName("className") then we find
-            HTML  collection its a array like object here we not apply forEach method.
-            3.we also find out query selector method: we we find any css class in query selector method:
-            a.querySelectorByAll(".exampleClass") we get nodeList i.e array like object here we apply forEach method.
-            b.querySelector(".exampleClass") we get first element.
-        </p>
-       </div>
-
-
-       <div class="bg-slate-600 rounded-lg p-3 mb-3 ">
-        <h2 class="text-white font-bold text-2xl mb-4">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h2>
-        <p  class="text-white">
-           innerHTML can render with html elements, innerText and innerContent can not render
-           with html elements it render only inner text. but innerText and innerContent have some difference innerText can not render which is hide by css but innerContent can render skip by css,i.e everything render. 
-        </p>
-       </div>
-
-
-
-       <div class="bg-slate-600 rounded-lg p-3 mb-3 ">
-        <h2 class="text-white font-bold text-2xl mb-4">Question-3: What is event delegation in the DOM?</h2>
-        <p  class="text-white">
-         event delegation is the process which event is apply on the parent element except each child element, i.e if new child element create the event also apply due to apply event on parent element, it can prevent memory consume.
-        </p>
-       </div>
-       <div class="bg-slate-600 rounded-lg p-3 mb-3 ">
-        <h2 class="text-white font-bold text-2xl mb-4">Question-4: What is event bubbling in the DOM?</h2>
-        <p  class="text-white">
-          event bubble is a process is that is, when an event apply on child element then first capture where the event is apply then it goes back to parent element.this process is called event bubble.
-        </p>
-       </div>
-       <div class="bg-slate-600 rounded-lg p-3 mb-3 ">
-        <h2 class="text-white font-bold text-2xl mb-4">Question-5: How do you create, add, and remove elements using JavaScript?
-        </h2>
-        <p  class="text-white"> To create an element, we use document.createElement, then set its content, style, or attributes. To add it, attach it to a parent element using appendChild , To remove an element,we use remove() to delete it directly or removeChild() to remove it from its parent. 
-        </p>
-       </div>
+        <div class="bg-slate-600 rounded-lg p-3 mb-3 ">
+            <h2 class="text-white font-bold text-2xl mb-4">Question-1: What are the different ways to select an element
+                in the DOM?</h2>
+            <p class="text-white">we select the element basically 3 ways:
+                1.get element by Id method: where we set id at html and then we find out getElementById("idName"),
+                2.get elements by class name method: were we find out getElementsByClassName("className") then we find
+                HTML collection its a array like object here we not apply forEach method.
+                3.we also find out query selector method: we we find any css class in query selector method:
+                a.querySelectorByAll(".exampleClass") we get nodeList i.e array like object here we apply forEach
+                method.
+                b.querySelector(".exampleClass") we get first element.
+            </p>
+        </div>
+        <div class="bg-slate-600 rounded-lg p-3 mb-3 ">
+            <h2 class="text-white font-bold text-2xl mb-4">Question-2: What is the difference between innerHTML,
+                innerText, and textContent ?</h2>
+            <p class="text-white">
+                innerHTML can render with html elements, innerText and innerContent can not render
+                with html elements it render only inner text. but innerText and innerContent have some difference
+                innerText can not render which is hide by css but innerContent can render skip by css,i.e everything
+                render.
+            </p>
+        </div>
+        <div class="bg-slate-600 rounded-lg p-3 mb-3 ">
+            <h2 class="text-white font-bold text-2xl mb-4">Question-3: What is event delegation in the DOM?</h2>
+            <p class="text-white">
+                event delegation is the process which event is apply on the parent element except each child element,
+                i.e if new child element create the event also apply due to apply event on parent element, it can
+                prevent memory consume.
+            </p>
+        </div>
+        <div class="bg-slate-600 rounded-lg p-3 mb-3 ">
+            <h2 class="text-white font-bold text-2xl mb-4">Question-4: What is event bubbling in the DOM?</h2>
+            <p class="text-white">
+                event bubble is a process is that is, when an event apply on child element then first capture where the
+                event is apply then it goes back to parent element.this process is called event bubble.
+            </p>
+        </div>
+        <div class="bg-slate-600 rounded-lg p-3 mb-3 ">
+            <h2 class="text-white font-bold text-2xl mb-4">Question-5: How do you create, add, and remove elements using
+                JavaScript?
+            </h2>
+            <p class="text-white"> To create an element, we use document.createElement, then set its content, style, or
+                attributes. To add it, attach it to a parent element using appendChild , To remove an element,we use
+                remove() to delete it directly or removeChild() to remove it from its parent.
+            </p>
+        </div>
 
     </div>
 </body>
+
 </html>
