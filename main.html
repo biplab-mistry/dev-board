@@ -14,10 +14,28 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <style>
+        .line-clamp {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .beautify {
+            width: 20vw;
+            background-color: #F4F7FF;
+            border-radius: 8px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            padding: 8px;
+
+        }
+    </style>
 </head>
 
-<body class="bg-[#F4F7FF]">
-    <div class="max-w-7xl mx-auto">
+<body class="max-w-auto px-1 bg-[#F4F7FF]">
+    <div class=" mx-auto">
         <!-- navbar part start here -->
         <header class="pt-8">
             <nav>
@@ -67,7 +85,8 @@
                                 <img class="w-16 h-16" src="assets/board.png" alt="check-box">
                             </div>
                             <div>
-                                <p class="font-[Poppins] font-medium text-2xl text-white">Discover Something <br> New Today!</p>
+                                <p class="font-[Poppins] font-medium text-2xl text-white">Discover Something <br> New
+                                    Today!</p>
                             </div>
                         </a>
                         <div class="p-8 bg-[#F4F7FF] rounded-xl flex gap-2 ">
@@ -84,132 +103,164 @@
                     </div>
                     <!-- dash board container -->
                     <div class="card-container  grid grid-cols-3 gap-4 mt-16">
-                        <div class="card  bg-[#F4F7FF] card-sm shadow-sm rounded-2xl p-6">
+                        <div class="card w-80 h-80  bg-[#F4F7FF] card-sm shadow-sm rounded-2xl p-2">
                             <div class="card-body">
-                                <div class="py-2 px-4 rounded-xl bg-white w-28">
+                                <div class="py-3 px-4 rounded-xl bg-white w-28">
                                     <h5>ShopEase</h5>
                                 </div>
-                                <h2 class="card-title mt-4">Fix Mobile Button Issue </h2>
-                                <p
-                                    class="p-4 rounded-xl bg-white font-[Poppins] font-normal text-base text-[#000000] my-8">
-                                    A card component has a figure, a body part, and inside body there are title and
-                                    actions parts</p>
-                                <div class=" card-actions flex justify-between items-center">
+                                <h2 class="card-title">Fix Mobile Button Issue1 </h2>
+                                <div class="p-3 rounded-xl bg-white  line-clamp">
+                                    <p class=" font-[Poppins] font-normal text-base text-[#000000]">Debug using Chrome
+                                        DevTools, check for overlapping elements, and ensure onClick works properly
+                                        and ensure onClick works properly</p>
+                                </div>
+
+                                <div class=" flex justify-between  mt-10 gap-4">
                                     <div>
                                         <p class="font-[Poppins] font-normal text-sm text-[##00303C]">Deadline</p>
                                         <h5 class="font-[Poppins] font-medium text-base text-[#00303C]">21 March 2025
                                         </h5>
                                     </div>
-                                    <button id="complte-btn"
-                                        class="btn btn-primary font-[Poppins] font-medium text-base text-white">Completed</button>
+                                    <div>
+                                        <button id="complte-btn"
+                                            class="btn btn-primary font-[Poppins] font-medium text-base text-white">Completed</button>
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
-                        <div class="card  bg-[#F4F7FF] card-sm shadow-sm rounded-2xl p-6">
+                        <div class="card w-80 h-80  bg-[#F4F7FF] card-sm shadow-sm rounded-2xl p-2">
                             <div class="card-body">
-                                <div class="py-2 px-4 rounded-xl bg-white w-28">
+                                <div class="py-3 px-4 rounded-xl bg-white w-28">
                                     <h5>ShopEase</h5>
                                 </div>
-                                <h2 class="card-title mt-4">Fix Mobile Button Issue </h2>
-                                <p
-                                    class="p-4 rounded-xl bg-white font-[Poppins] font-normal text-base text-[#000000] my-8">
-                                    A card component has a figure, a body part, and inside body there are title and
-                                    actions parts</p>
-                                <div class=" card-actions flex justify-between items-center">
+                                <h2 class="card-title">Fix Mobile Button Issue1 </h2>
+                                <div class="p-3 rounded-xl bg-white  line-clamp">
+                                    <p class=" font-[Poppins] font-normal text-base text-[#000000]">Debug using Chrome
+                                        DevTools, check for overlapping elements, and ensure onClick works properly
+                                        and ensure onClick works properly</p>
+                                </div>
+
+                                <div class=" flex justify-between  mt-10 gap-4">
                                     <div>
                                         <p class="font-[Poppins] font-normal text-sm text-[##00303C]">Deadline</p>
                                         <h5 class="font-[Poppins] font-medium text-base text-[#00303C]">21 March 2025
                                         </h5>
                                     </div>
-                                    <button
-                                        class="btn btn-primary font-[Poppins] font-medium text-base text-white">Completed</button>
+                                    <div>
+                                        <button id="complte-btn"
+                                            class="btn btn-primary font-[Poppins] font-medium text-base text-white">Completed</button>
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
-                        <div class="card  bg-[#F4F7FF] card-sm shadow-sm rounded-2xl p-6">
+                        <div class="card w-80 h-80  bg-[#F4F7FF] card-sm shadow-sm rounded-2xl p-2">
                             <div class="card-body">
-                                <div class="py-2 px-4 rounded-xl bg-white w-28">
+                                <div class="py-3 px-4 rounded-xl bg-white w-28">
                                     <h5>ShopEase</h5>
                                 </div>
-                                <h2 class="card-title mt-4">Fix Mobile Button Issue </h2>
-                                <p
-                                    class="p-4 rounded-xl bg-white font-[Poppins] font-normal text-base text-[#000000] my-8">
-                                    A card component has a figure, a body part, and inside body there are title and
-                                    actions parts</p>
-                                <div class=" card-actions flex justify-between items-center">
+                                <h2 class="card-title">Fix Mobile Button Issue1 </h2>
+                                <div class="p-3 rounded-xl bg-white  line-clamp">
+                                    <p class=" font-[Poppins] font-normal text-base text-[#000000]">Debug using Chrome
+                                        DevTools, check for overlapping elements, and ensure onClick works properly
+                                        and ensure onClick works properly</p>
+                                </div>
+
+                                <div class=" flex justify-between  mt-10 gap-4">
                                     <div>
                                         <p class="font-[Poppins] font-normal text-sm text-[##00303C]">Deadline</p>
                                         <h5 class="font-[Poppins] font-medium text-base text-[#00303C]">21 March 2025
                                         </h5>
                                     </div>
-                                    <button
-                                        class="btn btn-primary font-[Poppins] font-medium text-base text-white">Completed</button>
+                                    <div>
+                                        <button id="complte-btn"
+                                            class="btn btn-primary font-[Poppins] font-medium text-base text-white">Completed</button>
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
-                        <div class="card  bg-[#F4F7FF] card-sm shadow-sm rounded-2xl p-6">
+                        <div class="card w-80 h-80  bg-[#F4F7FF] card-sm shadow-sm rounded-2xl p-2">
                             <div class="card-body">
-                                <div class="py-2 px-4 rounded-xl bg-white w-28">
+                                <div class="py-3 px-4 rounded-xl bg-white w-28">
                                     <h5>ShopEase</h5>
                                 </div>
-                                <h2 class="card-title mt-4">Fix Mobile Button Issue </h2>
-                                <p
-                                    class="p-4 rounded-xl bg-white font-[Poppins] font-normal text-base text-[#000000] my-8">
-                                    A card component has a figure, a body part, and inside body there are title and
-                                    actions parts</p>
-                                <div class=" card-actions flex justify-between items-center">
+                                <h2 class="card-title">Fix Mobile Button Issue1 </h2>
+                                <div class="p-3 rounded-xl bg-white  line-clamp">
+                                    <p class=" font-[Poppins] font-normal text-base text-[#000000]">Debug using Chrome
+                                        DevTools, check for overlapping elements, and ensure onClick works properly
+                                        and ensure onClick works properly</p>
+                                </div>
+
+                                <div class=" flex justify-between  mt-10 gap-4">
                                     <div>
                                         <p class="font-[Poppins] font-normal text-sm text-[##00303C]">Deadline</p>
                                         <h5 class="font-[Poppins] font-medium text-base text-[#00303C]">21 March 2025
                                         </h5>
                                     </div>
-                                    <button
-                                        class="btn btn-primary font-[Poppins] font-medium text-base text-white">Completed</button>
+                                    <div>
+                                        <button id="complte-btn"
+                                            class="btn btn-primary font-[Poppins] font-medium text-base text-white">Completed</button>
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
-                        <div class="card  bg-[#F4F7FF] card-sm shadow-sm rounded-2xl p-6">
+                        <div class="card w-80 h-80  bg-[#F4F7FF] card-sm shadow-sm rounded-2xl p-2">
                             <div class="card-body">
-                                <div class="py-2 px-4 rounded-xl bg-white w-28">
+                                <div class="py-3 px-4 rounded-xl bg-white w-28">
                                     <h5>ShopEase</h5>
                                 </div>
-                                <h2 class="card-title mt-4">Fix Mobile Button Issue </h2>
-                                <p
-                                    class="p-4 rounded-xl bg-white font-[Poppins] font-normal text-base text-[#000000] my-8">
-                                    A card component has a figure, a body part, and inside body there are title and
-                                    actions parts</p>
-                                <div class=" card-actions flex justify-between items-center">
+                                <h2 class="card-title">Fix Mobile Button Issue1 </h2>
+                                <div class="p-3 rounded-xl bg-white  line-clamp">
+                                    <p class=" font-[Poppins] font-normal text-base text-[#000000]">Debug using Chrome
+                                        DevTools, check for overlapping elements, and ensure onClick works properly
+                                        and ensure onClick works properly</p>
+                                </div>
+
+                                <div class=" flex justify-between  mt-10 gap-4">
                                     <div>
                                         <p class="font-[Poppins] font-normal text-sm text-[##00303C]">Deadline</p>
                                         <h5 class="font-[Poppins] font-medium text-base text-[#00303C]">21 March 2025
                                         </h5>
                                     </div>
-                                    <button
-                                        class="btn btn-primary font-[Poppins] font-medium text-base text-white">Completed</button>
+                                    <div>
+                                        <button id="complte-btn"
+                                            class="btn btn-primary font-[Poppins] font-medium text-base text-white">Completed</button>
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
-                        <div class="card  bg-[#F4F7FF] card-sm shadow-sm rounded-2xl p-6">
+                        <div class="card w-80 h-80  bg-[#F4F7FF] card-sm shadow-sm rounded-2xl p-2">
                             <div class="card-body">
-                                <div class="py-2 px-4 rounded-xl bg-white w-28">
+                                <div class="py-3 px-4 rounded-xl bg-white w-28">
                                     <h5>ShopEase</h5>
                                 </div>
-                                <h2 class="card-title mt-4">Fix Mobile Button Issue </h2>
-                                <p
-                                    class="p-4 rounded-xl bg-white font-[Poppins] font-normal text-base text-[#000000] my-8">
-                                    A card component has a figure, a body part, and inside body there are title and
-                                    actions parts</p>
-                                <div class=" card-actions flex justify-between items-center">
+                                <h2 class="card-title">Fix Mobile Button Issue1 </h2>
+                                <div class="p-3 rounded-xl bg-white  line-clamp">
+                                    <p class=" font-[Poppins] font-normal text-base text-[#000000]">Debug using Chrome
+                                        DevTools, check for overlapping elements, and ensure onClick works properly
+                                        and ensure onClick works properly</p>
+                                </div>
+
+                                <div class=" flex justify-between  mt-10 gap-4">
                                     <div>
                                         <p class="font-[Poppins] font-normal text-sm text-[##00303C]">Deadline</p>
                                         <h5 class="font-[Poppins] font-medium text-base text-[#00303C]">21 March 2025
                                         </h5>
                                     </div>
-                                    <button
-                                        class="btn btn-primary font-[Poppins] font-medium text-base text-white">Completed</button>
+                                    <div>
+                                        <button id="complte-btn"
+                                            class="btn btn-primary font-[Poppins] font-medium text-base text-white">Completed</button>
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
+                        
+                     
                     </div>
                 </div>
 
@@ -217,13 +268,16 @@
 
 
 
-                <div class="p-8 rounded-2xl bg-white ">
+                <div class="p-4 rounded-2xl bg-white ">
                     <div class="header">
                         <div class="flex gap-4 ">
                             <img src="assets/activity.png" alt="">
                             <p> Activity Log</p>
-                           </div>
-                           <button class="btn  mt-4">Clear History</button>
+                        </div>
+                        <button class="btn  mt-4">Clear History</button>
+                    </div>
+                    <div id="right-container">
+
                     </div>
                 </div>
             </div>

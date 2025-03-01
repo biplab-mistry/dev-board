@@ -1,9 +1,9 @@
 const completeBtn = document.getElementsByClassName('btn-primary');
 const options1 = { weekday: 'short' }
-const options2 = {  month: 'long', day: 'numeric', year: 'numeric' }
-const day = new Date().toLocaleDateString('en-IN',options1);
-const restDay = new Date().toLocaleDateString('en-IN',options2);
-document.getElementById('date').innerHTML=`${day}, <br> ${restDay}`;
+const options2 = { month: 'long', day: 'numeric', year: 'numeric' }
+const day = new Date().toLocaleDateString('en-IN', options1);
+const restDay = new Date().toLocaleDateString('en-IN', options2);
+document.getElementById('date').innerHTML = `${day}, <br> ${restDay}`;
 
 
 
@@ -22,6 +22,26 @@ for (let btn of completeBtn) {
         if (taskElementNumber === 1) {
             alert("Congrats you have completed all the current task")
         }
+        const container = document.getElementById("right-container");
+
+        const card =btn.closest('.card');
+        const cardTitle=card.querySelector('.card-title').innerText;
+        const div=document.createElement("div");
+
+        const currentTime = new Date().toLocaleTimeString('en-IN', { 
+            hour: '2-digit', 
+            minute: '2-digit', 
+            second: '2-digit', 
+            hour12: true 
+        });
+        div.classList.add("beautify");
+        div.innerHTML=`
+        <p>you have completed the task ${cardTitle} at ${currentTime}</p>
+        
+        `
+        container.appendChild(div)
+     
+        
 
 
 
