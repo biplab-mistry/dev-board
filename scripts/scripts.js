@@ -27,6 +27,8 @@ for (let btn of completeBtn) {
 
         const card =btn.closest('.card');
         const cardTitle=card.querySelector('.card-title').innerText;
+        
+        
         const div=document.createElement("div");
 
         const currentTime = new Date().toLocaleTimeString('en-IN', { 
@@ -41,6 +43,9 @@ for (let btn of completeBtn) {
         <p>you have completed the task ${cardTitle} at ${currentTime}</p>
         
         `
+        containerElement.style.display = 'block';
+
+
         
         containerElement.appendChild(div)
       
@@ -57,12 +62,14 @@ for (let btn of completeBtn) {
 document.getElementById("cleanUp").addEventListener("click",function(){
     const rightContainer=document.getElementById("right-container")
     rightContainer.style.display='none';
+    rightContainer.innerHTML = '';
     for(let btn of completeBtn){
         if(btn.hasAttribute('disabled')){
             btn.removeAttribute('disabled')
         }
     }
     document.getElementById("task-assignment").innerText=completeBtn.length;
+    document.getElementById("nav-assignment").innerText=0;
 })
 // random color
 document.getElementById("colorChange").addEventListener("click",function(){
