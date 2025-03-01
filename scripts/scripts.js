@@ -9,9 +9,9 @@ document.getElementById('date').innerHTML = `${day}, <br> ${restDay}`;
 
 for (let btn of completeBtn) {
     btn.addEventListener('click', function (event) {
+        let taskElement = document.getElementById("task-assignment").innerText;
 
         alert("Board Update Successfully")
-        let taskElement = document.getElementById("task-assignment").innerText;
         let taskElementNumber = parseInt(taskElement);
         document.getElementById("task-assignment").innerText = taskElementNumber - 1;
         btn.setAttribute("disabled", true);
@@ -58,6 +58,7 @@ document.getElementById("cleanUp").addEventListener("click",function(){
             btn.removeAttribute('disabled')
         }
     }
+    document.getElementById("task-assignment").innerText=completeBtn.length;
 })
 // random color
 document.getElementById("colorChange").addEventListener("click",function(){
