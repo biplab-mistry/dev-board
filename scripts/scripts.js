@@ -59,3 +59,12 @@ document.getElementById("cleanUp").addEventListener("click",function(){
         }
     }
 })
+// random color
+document.getElementById("colorChange").addEventListener("click",function(){
+    document.body.style.backgroundColor=backGroundColor();
+})
+function backGroundColor(){
+    return randomColor="#"+Math.floor(Math.random()*(256*256*256)).toString(16)
+    
+}
+
