@@ -23,7 +23,7 @@ for (let btn of completeBtn) {
         if (taskElementNumber === 1) {
             alert("Congrats you have completed all the current task")
         }
-        const container = document.getElementById("right-container");
+        const containerElement = document.getElementById("right-container");
 
         const card =btn.closest('.card');
         const cardTitle=card.querySelector('.card-title').innerText;
@@ -35,12 +35,16 @@ for (let btn of completeBtn) {
             second: '2-digit', 
             hour12: true 
         });
+
         div.classList.add("beautify");
         div.innerHTML=`
         <p>you have completed the task ${cardTitle} at ${currentTime}</p>
         
         `
-        container.appendChild(div)
+        
+        containerElement.appendChild(div)
+      
+        
      
     })
 
@@ -69,3 +73,13 @@ function backGroundColor(){
     
 }
 
+  // time show in deadline section
+//   const deadLine=document.querySelectorAll(".dead-line")
+
+    const deadLine=  document.querySelectorAll('.dead-line');
+   
+    for(let date of deadLine){
+        date.innerText=new Date().toDateString('en-IN')
+    }
+      
+  
