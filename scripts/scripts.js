@@ -15,6 +15,7 @@ for (let btn of completeBtn) {
         let taskElementNumber = parseInt(taskElement);
         document.getElementById("task-assignment").innerText = taskElementNumber - 1;
         btn.setAttribute("disabled", true);
+
         let navAssignment = document.getElementById("nav-assignment").innerText;
         let navAssignmentNumber = parseInt(navAssignment)
         document.getElementById("nav-assignment").innerText = navAssignmentNumber + 1;
@@ -41,10 +42,20 @@ for (let btn of completeBtn) {
         `
         container.appendChild(div)
      
-        
-
-
-
     })
 
+
+
 }
+
+// clean up
+
+document.getElementById("cleanUp").addEventListener("click",function(){
+    const rightContainer=document.getElementById("right-container")
+    rightContainer.style.display='none';
+    for(let btn of completeBtn){
+        if(btn.hasAttribute('disabled')){
+            btn.removeAttribute('disabled')
+        }
+    }
+})
