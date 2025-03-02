@@ -81,3 +81,21 @@ for (let date of deadLine) {
 }
 
 
+// navigation
+
+document.getElementById("discoverNavigation").addEventListener("click",function(){
+    window.location.href="blog.html"
+
+})
+
+document.addEventListener("DOMContentLoaded", function () {
+    const deskNav = document.getElementById("deskNavigation");
+    if (deskNav) {
+        deskNav.addEventListener("click", function () {
+            window.location.href = "index.html";
+        });
+    } else {
+        console.error("Element with ID 'deskNavigation' not found.");
+    }
+});
+
