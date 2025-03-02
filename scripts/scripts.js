@@ -40,7 +40,7 @@ for (let btn of completeBtn) {
 
         div.classList.add("beautify");
         div.innerHTML = `
-        <p>you have completed the task ${cardTitle} at ${currentTime}</p>
+        <p class="font-[Poppins] font-normal text-xs text-black">you have completed the task ${cardTitle} at ${currentTime}</p>
         
         `
         containerElement.style.display = 'block';
