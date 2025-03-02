@@ -77,7 +77,7 @@ function backGroundColor() {
 const deadLine = document.querySelectorAll('.dead-line');
 
 for (let date of deadLine) {
-    date.innerText = new Date().toLocaleDateString('en-IN',options2)
+    date.innerText = new Date().toLocaleDateString('en-IN', options2)
 }
 
 
